@@ -1,0 +1,22 @@
+Apr 22 17:33:16.626 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 22 17:33:16.626 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52927.
+Apr 22 17:33:16.639 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 22 17:33:16.639 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/fengyuansi/GNS3/projects/beginning/project-files/dynamips 
+Apr 22 17:33:16.639 GENERAL: working_dir=/Users/fengyuansi/GNS3/projects/beginning/project-files/dynamips
+Apr 22 17:33:16.640 HYPERVISOR: exec_cmd: vm create R5 5 c3725 
+Apr 22 17:33:16.641 VM: VM R5 created.
+Apr 22 17:33:16.641 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5006 
+Apr 22 17:33:16.642 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Apr 22 17:33:16.643 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Apr 22 17:33:16.644 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Apr 22 17:33:16.645 HYPERVISOR: exec_cmd: vm set_ios R5 /Users/fengyuansi/GNS3/images/IOS/c3725-advipservicesk9-mz.124-15.T6.image 
+Apr 22 17:33:16.646 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 22 17:33:16.646 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60ba3a88 
+Apr 22 17:33:16.648 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Apr 22 17:34:20.438 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 22 17:34:20.439 HYPERVISOR: exec_cmd: vm extract_config R5 
+Apr 22 17:34:20.440 HYPERVISOR: exec_cmd: vm delete R5 
+Apr 22 17:34:20.440 VM: VM R5 destroyed.
+Apr 22 17:34:20.441 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 22 17:34:20.631 HYPERVISOR: Stopped.
+Apr 22 17:34:20.631 GENERAL: reset done.

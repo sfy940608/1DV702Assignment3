@@ -1,0 +1,293 @@
+{
+    "auto_start": false,
+    "name": "1dv702Assignment3",
+    "project_id": "6f684466-ac7f-4200-a2ed-84ebe173fab1",
+    "revision": 4,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from HUB1 port 1 to A port Ethernet0",
+                "destination_node_id": 3,
+                "destination_port_id": 21,
+                "id": 1,
+                "source_node_id": 2,
+                "source_port_id": 13
+            },
+            {
+                "description": "Link from HUB1 port 2 to B port Ethernet0",
+                "destination_node_id": 4,
+                "destination_port_id": 22,
+                "id": 2,
+                "source_node_id": 2,
+                "source_port_id": 14
+            },
+            {
+                "description": "Link from HUB1 port 3 to M port Ethernet0",
+                "destination_node_id": 5,
+                "destination_port_id": 23,
+                "id": 3,
+                "source_node_id": 2,
+                "source_port_id": 15
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Ethernet hub",
+                "device_id": "eaacd67c-09db-4ef5-ade7-092542eef4ef",
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "HUB1",
+                    "x": 17.9765625,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to A on port Ethernet0",
+                        "id": 13,
+                        "link_id": 1,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "description": "connected to B on port Ethernet0",
+                        "id": 14,
+                        "link_id": 2,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "description": "connected to M on port Ethernet0",
+                        "id": 15,
+                        "link_id": 3,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "id": 16,
+                        "name": "4",
+                        "port_number": 4
+                    },
+                    {
+                        "id": 17,
+                        "name": "5",
+                        "port_number": 5
+                    },
+                    {
+                        "id": 18,
+                        "name": "6",
+                        "port_number": 6
+                    },
+                    {
+                        "id": 19,
+                        "name": "7",
+                        "port_number": 7
+                    },
+                    {
+                        "id": 20,
+                        "name": "8",
+                        "port_number": 8
+                    }
+                ],
+                "properties": {
+                    "name": "HUB1"
+                },
+                "server_id": 1,
+                "type": "EthernetHub",
+                "x": -27.0,
+                "y": -99.0
+            },
+            {
+                "description": "QEMU VM",
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "A",
+                    "x": 24.8203125,
+                    "y": -25.0
+                },
+                "linked_clone": true,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB1 on port 1",
+                        "id": 21,
+                        "link_id": 1,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 1,
+                    "boot_priority": "c",
+                    "console": 5000,
+                    "console_type": "telnet",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "linux-microcore-4.0.2-clean.img",
+                    "hda_disk_image_md5sum": "e13d0d1c0b3999ae2386bba70417930c",
+                    "hda_disk_interface": "ide",
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": true,
+                    "mac_address": "00:fa:b1:dc:b1:00",
+                    "name": "A",
+                    "options": "-vga none -vnc none",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64",
+                    "ram": 256
+                },
+                "server_id": 1,
+                "type": "QemuVM",
+                "vm_id": "ff293a01-8431-4ae0-b711-a20f319ddcb1",
+                "x": -159.5,
+                "y": -207.5
+            },
+            {
+                "description": "QEMU VM",
+                "id": 4,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "B",
+                    "x": 25.3515625,
+                    "y": -25.0
+                },
+                "linked_clone": true,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB1 on port 2",
+                        "id": 22,
+                        "link_id": 2,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 1,
+                    "boot_priority": "c",
+                    "console": 5001,
+                    "console_type": "telnet",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "linux-microcore-4.0.2-clean.img",
+                    "hda_disk_image_md5sum": "e13d0d1c0b3999ae2386bba70417930c",
+                    "hda_disk_interface": "ide",
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": true,
+                    "mac_address": "00:fa:b1:6a:fb:00",
+                    "name": "B",
+                    "options": "-vga none -vnc none",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64",
+                    "ram": 256
+                },
+                "server_id": 1,
+                "type": "QemuVM",
+                "vm_id": "7ab3e0d2-50f5-4e4f-b7ea-047de3676afb",
+                "x": 108.5,
+                "y": -206.5
+            },
+            {
+                "description": "QEMU VM",
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "M",
+                    "x": 68.96875,
+                    "y": 11.0
+                },
+                "linked_clone": true,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB1 on port 3",
+                        "id": 23,
+                        "link_id": 3,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 1,
+                    "boot_priority": "c",
+                    "console": 5002,
+                    "console_type": "telnet",
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "linux-microcore-4.0.2-clean.img",
+                    "hda_disk_image_md5sum": "e13d0d1c0b3999ae2386bba70417930c",
+                    "hda_disk_interface": "ide",
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_interface": "ide",
+                    "legacy_networking": true,
+                    "mac_address": "00:fa:b1:01:f8:00",
+                    "name": "M",
+                    "options": "-vga none -vnc none",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64",
+                    "ram": 256
+                },
+                "server_id": 1,
+                "type": "QemuVM",
+                "vm_id": "d4556017-1ed6-489e-b164-67a1a4f101f8",
+                "x": -27.5,
+                "y": 0.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "100.200.0.1",
+                "x": -161.0,
+                "y": -251.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "100.200.0.2",
+                "x": 107.0,
+                "y": -251.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.3"
+}

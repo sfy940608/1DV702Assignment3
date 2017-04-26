@@ -1,0 +1,61 @@
+Apr 24 22:10:32.565 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 24 22:10:32.566 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59040.
+Apr 24 22:10:32.590 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 24 22:10:32.595 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/fengyuansi/GNS3/projects/beginning/project-files/dynamips 
+Apr 24 22:10:32.595 GENERAL: working_dir=/Users/fengyuansi/GNS3/projects/beginning/project-files/dynamips
+Apr 24 22:10:32.597 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Apr 24 22:10:32.597 VM: VM R2 created.
+Apr 24 22:10:32.599 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+Apr 24 22:10:32.601 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Apr 24 22:10:32.603 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 24 22:10:32.604 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c202.1bbc.0000 
+Apr 24 22:10:32.607 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Apr 24 22:10:32.610 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:10:32.611 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60ba3a88 
+Apr 24 22:10:32.613 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/fengyuansi/GNS3/images/IOS/c3725-advipservicesk9-mz.124-15.T6.image 
+Apr 24 22:10:32.616 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Apr 24 22:10:32.688 HYPERVISOR: exec_cmd: nio create_udp udp-822cd6d7-8b89-4616-bfd2-81d41c4e2281 10002 127.0.0.1 10003 
+Apr 24 22:10:32.694 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-822cd6d7-8b89-4616-bfd2-81d41c4e2281 
+Apr 24 22:10:32.700 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:10:32.725 HYPERVISOR: exec_cmd: nio create_udp udp-5bcafc77-4b3b-4ca4-a544-3ef8528ddd32 10006 127.0.0.1 10007 
+Apr 24 22:10:32.737 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-5bcafc77-4b3b-4ca4-a544-3ef8528ddd32 
+Apr 24 22:10:32.740 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:10:38.230 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Apr 24 22:10:38.232 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3725-advipservicesk9-mz.124-15.T6.image-128.ghost 
+Apr 24 22:10:38.233 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:10:38.234 HYPERVISOR: exec_cmd: vm start R2 
+Apr 24 22:12:17.134 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:12:17.140 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 24 22:12:17.241 VM: VM R2 shutdown.
+Apr 24 22:12:17.244 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:12:18.368 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:12:18.378 HYPERVISOR: exec_cmd: vm start R2 
+Apr 24 22:12:47.933 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:12:47.939 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 24 22:12:48.028 VM: VM R2 shutdown.
+Apr 24 22:12:48.030 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:12:56.160 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:12:56.170 HYPERVISOR: exec_cmd: vm start R2 
+Apr 24 22:14:05.564 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:14:05.568 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 24 22:14:05.674 VM: VM R2 shutdown.
+Apr 24 22:14:05.676 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:14:08.799 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:14:08.809 HYPERVISOR: exec_cmd: vm start R2 
+Apr 24 22:14:37.761 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:14:37.766 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 24 22:14:37.868 VM: VM R2 shutdown.
+Apr 24 22:14:37.871 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:14:40.270 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:14:40.280 HYPERVISOR: exec_cmd: vm start R2 
+Apr 24 22:43:52.465 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:43:52.468 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 24 22:43:52.559 VM: VM R2 shutdown.
+Apr 24 22:43:52.561 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:43:53.091 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 24 22:43:53.094 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 24 22:43:53.099 HYPERVISOR: exec_cmd: vm delete R2 
+Apr 24 22:43:53.099 VM: VM R2 destroyed.
+Apr 24 22:43:53.101 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 24 22:43:53.346 HYPERVISOR: Stopped.
+Apr 24 22:43:53.346 GENERAL: reset done.

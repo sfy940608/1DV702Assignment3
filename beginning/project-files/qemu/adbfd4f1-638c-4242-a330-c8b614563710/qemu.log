@@ -1,0 +1,4 @@
+Start QEMU with /Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64 -name C1 -m 256M -smp cpus=1 -boot order=c -drive file=/Users/fengyuansi/GNS3/projects/beginning/project-files/qemu/adbfd4f1-638c-4242-a330-c8b614563710/hda_disk.qcow2,if=ide,index=0,media=disk -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:59141,server,nowait -net none -net nic,vlan=0,macaddr=00:4d:77:37:10:00,model=e1000 -net udp,vlan=0,name=gns3-0,sport=10000,dport=10001,daddr=127.0.0.1 -vga none -vnc none
+
+Execution log:
+Warning: vlan 0 is not connected to host network
