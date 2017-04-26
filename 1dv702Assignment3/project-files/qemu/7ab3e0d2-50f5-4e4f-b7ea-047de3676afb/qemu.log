@@ -1,4 +1,4 @@
-Start QEMU with /Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64 -name B -m 256M -smp cpus=1 -boot order=c -drive file=/Users/fengyuansi/GNS3/projects/1dv702Assignment3/project-files/qemu/7ab3e0d2-50f5-4e4f-b7ea-047de3676afb/hda_disk.qcow2,if=ide,index=0,media=disk -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:60327,server,nowait -net none -net nic,vlan=0,macaddr=00:fa:b1:6a:fb:00,model=e1000 -net udp,vlan=0,name=gns3-0,sport=10003,dport=10002,daddr=127.0.0.1 -vga none -vnc none
+Start QEMU with /Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64 -name B -m 256M -smp cpus=1 -boot order=c -drive file=/Users/fengyuansi/GNS3/projects/1dv702Assignment3/project-files/qemu/7ab3e0d2-50f5-4e4f-b7ea-047de3676afb/hda_disk.qcow2,if=ide,index=0,media=disk -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:50087,server,nowait -net none -net nic,vlan=0,macaddr=00:fa:b1:6a:fb:00,model=e1000 -net udp,vlan=0,name=gns3-0,sport=10002,dport=10001,daddr=127.0.0.1 -vga none -vnc none
 
 Execution log:
 Warning: vlan 0 is not connected to host network
