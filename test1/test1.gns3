@@ -1,9 +1,14 @@
 {
     "auto_start": false,
     "name": "test1",
-    "project_id": null,
-    "revision": 4,
-    "topology": {},
+    "project_id": "7016c6ef-a05f-476c-b1b8-fb3f0d3d2a82",
+    "revision": 7,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [],
+        "nodes": []
+    },
     "type": "topology",
-    "version": "1.5.3"
+    "version": "2.0.0rc4"
 }

@@ -2,231 +2,350 @@
     "auto_start": false,
     "name": "beginning",
     "project_id": "c79cd43c-0fe2-4718-b415-b9f7345a4d77",
-    "revision": 4,
-    "show_port_names": true,
+    "revision": 7,
     "topology": {
-        "ellipses": [
+        "computes": [
             {
-                "border_style": 2,
-                "height": 454.0,
-                "width": 444.0,
-                "x": -786.0,
-                "y": -482.0,
-                "z": -1.0
+                "compute_id": "local",
+                "host": "127.0.0.1",
+                "name": "Local",
+                "port": 3080,
+                "protocol": "http"
+            }
+        ],
+        "drawings": [
+            {
+                "drawing_id": "f142b8d2-b3fa-45e5-84ba-5401ddebfea9",
+                "rotation": 0,
+                "svg": "<svg height=\"454\" width=\"444\"><ellipse cx=\"222\" cy=\"227\" fill=\"#ffffff\" fill-opacity=\"1.0\" rx=\"222\" ry=\"227\" stroke-dasharray=\"25, 25\" stroke=\"#000000\" stroke-width=\"2\" /></svg>",
+                "x": -786,
+                "y": -482,
+                "z": -1
+            },
+            {
+                "drawing_id": "ef8e06d9-ee1d-44ca-8a00-e53f8c741a37",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"210\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">Network A\n100.200.0.0</text></svg>",
+                "x": -943,
+                "y": -492,
+                "z": 0
+            },
+            {
+                "drawing_id": "349da9f1-76a6-48d8-8e73-bcec79d754a2",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"210\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">Network B\n100.200.1.0</text></svg>",
+                "x": -254,
+                "y": -484,
+                "z": 0
+            },
+            {
+                "drawing_id": "d0a906f1-4037-4795-af71-20d169f9e2e7",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">100.200.0.1</text></svg>",
+                "x": -998,
+                "y": -321,
+                "z": 0
+            },
+            {
+                "drawing_id": "8b9a50ac-bdfa-49cd-b2d7-930f7dd465f7",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">100.200.0.2\n</text></svg>",
+                "x": -885,
+                "y": -277,
+                "z": 0
+            },
+            {
+                "drawing_id": "06a20808-f9e4-4501-b189-08ebb581054e",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"190\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.1.0\n100Mbps</text></svg>",
+                "x": -735,
+                "y": -381,
+                "z": 0
+            },
+            {
+                "drawing_id": "87c31989-473e-41c5-8539-1bcd71743a19",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"190\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.3.0\n100Mbps</text></svg>",
+                "x": -448,
+                "y": -379,
+                "z": 0
+            },
+            {
+                "drawing_id": "63d058b4-6389-4757-b124-7fdc71a1c30b",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"190\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.2.0\n100Mbps</text></svg>",
+                "x": -736,
+                "y": -134,
+                "z": 0
+            },
+            {
+                "drawing_id": "7d33dbef-3702-4186-8749-c3e1701f96fc",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"180\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.4.0\n10Mbps</text></svg>",
+                "x": -591,
+                "y": -286,
+                "z": 0
+            },
+            {
+                "drawing_id": "9cd8a90e-dfb1-4dfa-8c77-5c33cb8c4953",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"200\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.5.0\n1544kbps</text></svg>",
+                "x": -469,
+                "y": -135,
+                "z": 0
+            },
+            {
+                "drawing_id": "7cb4b445-f200-40b6-9093-6c990a5ab05a",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">100.200.1.2</text></svg>",
+                "x": -307,
+                "y": -285,
+                "z": 0
+            },
+            {
+                "drawing_id": "447d36da-df0c-4338-bde0-78928233892d",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">100.200.1.1</text></svg>",
+                "x": -227,
+                "y": -323,
+                "z": 0
+            },
+            {
+                "drawing_id": "c5937b6a-c5a1-43c2-9777-0273805fb853",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"80\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">Backbone</text></svg>",
+                "x": -590,
+                "y": -500,
+                "z": 0
+            },
+            {
+                "drawing_id": "cde5e058-fd62-4b02-8216-7bd05b97dd69",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.1.1</text></svg>",
+                "x": -742,
+                "y": -287,
+                "z": 0
+            },
+            {
+                "drawing_id": "c677a1d9-fe4c-4c76-a6da-57dcd3210ac3",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.1.2</text></svg>",
+                "x": -626,
+                "y": -393,
+                "z": 0
+            },
+            {
+                "drawing_id": "edaedc2c-f463-4f81-a28f-3a5c12f63327",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.4.1</text></svg>",
+                "x": -709,
+                "y": -249,
+                "z": 0
+            },
+            {
+                "drawing_id": "44c48f8b-5d45-46da-ae3e-dc8039b88848",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.4.2</text></svg>",
+                "x": -475,
+                "y": -246,
+                "z": 0
+            },
+            {
+                "drawing_id": "92c703d6-a1a0-4ed7-bf78-c4828e988d7b",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.3.1</text></svg>",
+                "x": -541,
+                "y": -390,
+                "z": 0
+            },
+            {
+                "drawing_id": "4ef0ae09-97e9-4544-9000-4fb3c9fa82a6",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.3.2</text></svg>",
+                "x": -448,
+                "y": -291,
+                "z": 0
+            },
+            {
+                "drawing_id": "4871e74f-3343-44d9-ba41-b55864a25a7e",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.2.1</text></svg>",
+                "x": -712,
+                "y": -223,
+                "z": 0
+            },
+            {
+                "drawing_id": "a2cca28a-a4d1-4423-b9eb-112cb942a109",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.2.2</text></svg>",
+                "x": -639,
+                "y": -138,
+                "z": 0
+            },
+            {
+                "drawing_id": "70c81662-be6c-4fbe-9705-8480701477fa",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.5.1</text></svg>",
+                "x": -563,
+                "y": -138,
+                "z": 0
+            },
+            {
+                "drawing_id": "2c1bb621-af1c-45b7-98f5-8acef3be5e71",
+                "rotation": 0,
+                "svg": "<svg height=\"20\" width=\"110\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10\" font-weight=\"bold\" font-style=\"normal\">192.168.5.2</text></svg>",
+                "x": -482,
+                "y": -227,
+                "z": 0
+            },
+            {
+                "drawing_id": "0216dd67-eb69-4a78-ad15-5b21547d69ea",
+                "rotation": 0,
+                "svg": "<svg height=\"420\" width=\"215\"><rect fill=\"#fc00d3\" fill-opacity=\"1.0\" height=\"420\" width=\"215\" stroke=\"#000000\" stroke-width=\"2\" /></svg>",
+                "x": -1002,
+                "y": -457,
+                "z": -1
+            },
+            {
+                "drawing_id": "0e08b200-fb22-4c09-a710-eb66271a9821",
+                "rotation": 0,
+                "svg": "<svg height=\"413\" width=\"292\"><rect fill=\"#3fffcb\" fill-opacity=\"1.0\" height=\"413\" width=\"292\" stroke=\"#000000\" stroke-width=\"2\" /></svg>",
+                "x": -333,
+                "y": -448,
+                "z": -2
             }
         ],
         "links": [
             {
-                "description": "Link from R2 port FastEthernet0/1 to R4 port FastEthernet0/0",
-                "destination_node_id": 5,
-                "destination_port_id": 8,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -35.27416781738185,
-                    "y": -4.938452785412267
-                },
-                "id": 1,
-                "source_node_id": 3,
-                "source_port_id": 5,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": 68.27416781738191,
-                    "y": 48.93845278541227
-                }
+                "link_id": "96692418-9f0b-4464-9313-bf6bf28aa1e9",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "35a8e759-a9ba-4b31-93a5-8537ac15e1d5",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
+                        "port_number": 0
+                    }
+                ]
             },
             {
-                "description": "Link from C2 port Ethernet0 to R4 port FastEthernet1/0",
-                "destination_node_id": 5,
-                "destination_port_id": 14,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 72.99547818221481,
-                    "y": 22.60143576213858
-                },
-                "id": 2,
-                "source_node_id": 6,
-                "source_port_id": 10,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": -7.495478182214811,
-                    "y": 28.89856423786142
-                }
+                "link_id": "4ef3eea4-0da7-4ef5-8eb2-aad703789c2d",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "657ac3ef-795f-4bc5-967f-341d04c87486",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "node_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
+                        "port_number": 0
+                    }
+                ]
             },
             {
-                "description": "Link from C1 port Ethernet0 to R1 port FastEthernet0/0",
-                "destination_node_id": 1,
-                "destination_port_id": 1,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -6.997687794442982,
-                    "y": 22.430082664456364
-                },
-                "id": 3,
-                "source_node_id": 2,
-                "source_port_id": 3,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": 72.49768779444298,
-                    "y": 29.069917335543636
-                }
+                "link_id": "cead9391-2e0f-4b66-ae34-2d5bac95ff03",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "adbfd4f1-638c-4242-a330-c8b614563710",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "67be5822-a793-493e-9b4e-509c406daa7f",
+                        "port_number": 0
+                    }
+                ]
             },
             {
-                "description": "Link from R1 port FastEthernet0/1 to R2 port FastEthernet0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 4,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 2.739801155708733,
-                    "y": 48.15951769249483
-                },
-                "id": 4,
-                "source_node_id": 1,
-                "source_port_id": 2,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": 63.26019884429127,
-                    "y": -4.1595176924948305
-                }
+                "link_id": "3ade9173-546a-4c59-b2ed-58f4ad91f220",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "67be5822-a793-493e-9b4e-509c406daa7f",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "35a8e759-a9ba-4b31-93a5-8537ac15e1d5",
+                        "port_number": 0
+                    }
+                ]
             },
             {
-                "description": "Link from R1 port FastEthernet1/0 to R4 port FastEthernet0/1",
-                "destination_node_id": 5,
-                "destination_port_id": 9,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": -37.0,
-                    "y": 23.0
-                },
-                "id": 5,
-                "source_node_id": 1,
-                "source_port_id": 12,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 73.0,
-                    "y": 22.0
-                }
+                "link_id": "7e589064-9ebf-4eb4-906d-3a967163880f",
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "node_id": "67be5822-a793-493e-9b4e-509c406daa7f",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
+                        "port_number": 1
+                    }
+                ]
             },
             {
-                "description": "Link from R1 port FastEthernet2/0 to R3 port FastEthernet0/0",
-                "destination_node_id": 4,
-                "destination_port_id": 6,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -20.888772282078776,
-                    "y": -39.58310161493645
-                },
-                "id": 6,
-                "source_node_id": 1,
-                "source_port_id": 11,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f2/0",
-                    "x": 68.88877228207878,
-                    "y": 44.58310161493645
-                }
+                "link_id": "618e770b-8ef7-496d-896a-27da2a314876",
+                "nodes": [
+                    {
+                        "adapter_number": 2,
+                        "node_id": "67be5822-a793-493e-9b4e-509c406daa7f",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "0409f37d-8ec8-4f5c-bbed-d947365eedcb",
+                        "port_number": 0
+                    }
+                ]
             },
             {
-                "description": "Link from R3 port Serial0/0 to R4 port Serial0/0",
-                "destination_node_id": 5,
-                "destination_port_id": 15,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "s0/0",
-                    "x": -47.0,
-                    "y": 46.0
-                },
-                "id": 7,
-                "source_node_id": 4,
-                "source_port_id": 16,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "s0/0",
-                    "x": 41.0,
-                    "y": -37.0
-                }
+                "link_id": "5ebda419-6d9e-4237-8596-18998127f335",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "0409f37d-8ec8-4f5c-bbed-d947365eedcb",
+                        "port_number": 16
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
+                        "port_number": 16
+                    }
+                ]
             }
         ],
         "nodes": [
             {
-                "description": "Router c3725",
-                "dynamips_id": 1,
-                "id": 1,
+                "compute_id": "local",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "R1",
-                    "x": 22.2578125,
-                    "y": -25.0
+                    "x": 22,
+                    "y": -25
                 },
-                "ports": [
-                    {
-                        "adapter_number": 2,
-                        "description": "connected to R3 on port FastEthernet0/0",
-                        "id": 11,
-                        "link_id": 6,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to C1 on port Ethernet0",
-                        "id": 1,
-                        "link_id": 3,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R2 on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 4,
-                        "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to R4 on port FastEthernet0/1",
-                        "id": 12,
-                        "link_id": 5,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    }
-                ],
+                "name": "R1",
+                "node_id": "67be5822-a793-493e-9b4e-509c406daa7f",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
                 "properties": {
                     "auto_delete_disks": true,
                     "clock_divisor": 8,
-                    "console": 5000,
                     "disk0": 0,
                     "disk1": 0,
+                    "dynamips_id": 1,
                     "exec_area": 64,
                     "idlemax": 500,
                     "idlepc": "0x60ba3a88",
@@ -236,7 +355,6 @@
                     "iomem": 5,
                     "mac_addr": "c201.1b98.0000",
                     "mmap": true,
-                    "name": "R1",
                     "nvram": 256,
                     "platform": "c3725",
                     "ram": 128,
@@ -247,42 +365,33 @@
                     "startup_config": "configs/i1_startup-config.cfg",
                     "system_id": "FTX0945W0MY"
                 },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "67be5822-a793-493e-9b4e-509c406daa7f",
-                "x": -812.0,
-                "y": -271.0
+                "symbol": ":/symbols/router.svg",
+                "x": -812,
+                "y": -271,
+                "z": 1
             },
             {
-                "description": "QEMU VM",
-                "id": 2,
+                "compute_id": "local",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "C1",
-                    "x": 21.6484375,
-                    "y": -25.0
+                    "x": 21,
+                    "y": -25
                 },
-                "linked_clone": true,
+                "name": "C1",
+                "node_id": "adbfd4f1-638c-4242-a330-c8b614563710",
+                "node_type": "qemu",
                 "port_name_format": "Ethernet{0}",
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R1 on port FastEthernet0/0",
-                        "id": 3,
-                        "link_id": 3,
-                        "name": "Ethernet0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    }
-                ],
+                "port_segment_size": 0,
                 "properties": {
                     "acpi_shutdown": false,
                     "adapter_type": "e1000",
                     "adapters": 1,
                     "boot_priority": "c",
-                    "console": 5001,
-                    "console_type": "telnet",
                     "cpu_throttling": 0,
                     "cpus": 1,
                     "hda_disk_image": "linux-microcore-4.0.2-clean.img",
@@ -293,56 +402,40 @@
                     "hdd_disk_interface": "ide",
                     "legacy_networking": true,
                     "mac_address": "00:4d:77:37:10:00",
-                    "name": "C1",
                     "options": "-vga none -vnc none",
                     "platform": "x86_64",
                     "process_priority": "normal",
                     "qemu_path": "/Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64",
                     "ram": 256
                 },
-                "server_id": 1,
-                "type": "QemuVM",
-                "vm_id": "adbfd4f1-638c-4242-a330-c8b614563710",
-                "x": -997.5,
-                "y": -276.5
+                "symbol": ":/symbols/qemu_guest.svg",
+                "x": -997,
+                "y": -276,
+                "z": 1
             },
             {
-                "description": "Router c3725",
-                "dynamips_id": 2,
-                "id": 3,
+                "compute_id": "local",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "R2",
-                    "x": 22.2578125,
-                    "y": -25.0
+                    "x": 22,
+                    "y": -25
                 },
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R1 on port FastEthernet0/1",
-                        "id": 4,
-                        "link_id": 4,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R4 on port FastEthernet0/0",
-                        "id": 5,
-                        "link_id": 1,
-                        "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
-                        "port_number": 1
-                    }
-                ],
+                "name": "R2",
+                "node_id": "35a8e759-a9ba-4b31-93a5-8537ac15e1d5",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
                 "properties": {
                     "auto_delete_disks": true,
                     "clock_divisor": 8,
-                    "console": 5002,
                     "disk0": 0,
                     "disk1": 0,
+                    "dynamips_id": 2,
                     "exec_area": 64,
                     "idlemax": 500,
                     "idlepc": "0x60ba3a88",
@@ -352,7 +445,6 @@
                     "iomem": 5,
                     "mac_addr": "c202.1bbc.0000",
                     "mmap": true,
-                    "name": "R2",
                     "nvram": 256,
                     "platform": "c3725",
                     "ram": 128,
@@ -361,55 +453,34 @@
                     "startup_config": "configs/i2_startup-config.cfg",
                     "system_id": "FTX0945W0MY"
                 },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "35a8e759-a9ba-4b31-93a5-8537ac15e1d5",
-                "x": -598.0,
-                "y": -456.0
+                "symbol": ":/symbols/router.svg",
+                "x": -598,
+                "y": -456,
+                "z": 1
             },
             {
-                "description": "Router c3725",
-                "dynamips_id": 3,
-                "id": 4,
+                "compute_id": "local",
+                "console": 5003,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "R3",
-                    "x": 22.2578125,
-                    "y": -25.0
+                    "x": 22,
+                    "y": -25
                 },
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R1 on port FastEthernet2/0",
-                        "id": 6,
-                        "link_id": 6,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "id": 7,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R4 on port Serial0/0",
-                        "id": 16,
-                        "link_id": 7,
-                        "name": "Serial0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 16
-                    }
-                ],
+                "name": "R3",
+                "node_id": "0409f37d-8ec8-4f5c-bbed-d947365eedcb",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
                 "properties": {
                     "auto_delete_disks": true,
                     "clock_divisor": 8,
-                    "console": 5003,
                     "disk0": 0,
                     "disk1": 0,
+                    "dynamips_id": 3,
                     "exec_area": 64,
                     "idlemax": 500,
                     "idlepc": "0x60ba3a88",
@@ -419,7 +490,6 @@
                     "iomem": 5,
                     "mac_addr": "c203.1bc1.0000",
                     "mmap": true,
-                    "name": "R3",
                     "nvram": 256,
                     "platform": "c3725",
                     "ram": 128,
@@ -429,67 +499,34 @@
                     "system_id": "FTX0945W0MY",
                     "wic0": "WIC-1T"
                 },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "0409f37d-8ec8-4f5c-bbed-d947365eedcb",
-                "x": -595.0,
-                "y": -78.0
+                "symbol": ":/symbols/router.svg",
+                "x": -595,
+                "y": -78,
+                "z": 1
             },
             {
-                "description": "Router c3725",
-                "dynamips_id": 4,
-                "id": 5,
+                "compute_id": "local",
+                "console": 5004,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "R4",
-                    "x": 22.2578125,
-                    "y": -25.0
+                    "x": 22,
+                    "y": -25
                 },
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R2 on port FastEthernet0/1",
-                        "id": 8,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R1 on port FastEthernet1/0",
-                        "id": 9,
-                        "link_id": 5,
-                        "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
-                        "port_number": 1
-                    },
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R3 on port Serial0/0",
-                        "id": 15,
-                        "link_id": 7,
-                        "name": "Serial0/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 16
-                    },
-                    {
-                        "adapter_number": 1,
-                        "description": "connected to C2 on port Ethernet0",
-                        "id": 14,
-                        "link_id": 2,
-                        "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    }
-                ],
+                "name": "R4",
+                "node_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
                 "properties": {
                     "auto_delete_disks": true,
                     "clock_divisor": 8,
-                    "console": 5004,
                     "disk0": 0,
                     "disk1": 0,
+                    "dynamips_id": 4,
                     "exec_area": 64,
                     "idlemax": 500,
                     "idlepc": "0x60ba3a88",
@@ -499,7 +536,6 @@
                     "iomem": 5,
                     "mac_addr": "c204.1bc2.0000",
                     "mmap": true,
-                    "name": "R4",
                     "nvram": 256,
                     "platform": "c3725",
                     "ram": 128,
@@ -510,42 +546,33 @@
                     "system_id": "FTX0945W0MY",
                     "wic0": "WIC-1T"
                 },
-                "server_id": 1,
-                "type": "C3725",
-                "vm_id": "1444a5fc-6d48-4862-a30f-df5f64d2a714",
-                "x": -366.0,
-                "y": -271.0
+                "symbol": ":/symbols/router.svg",
+                "x": -366,
+                "y": -271,
+                "z": 1
             },
             {
-                "description": "QEMU VM",
-                "id": 6,
+                "compute_id": "local",
+                "console": 5005,
+                "console_type": "telnet",
+                "first_port_name": null,
                 "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "C2",
-                    "x": 21.6484375,
-                    "y": -25.0
+                    "x": 21,
+                    "y": -25
                 },
-                "linked_clone": true,
+                "name": "C2",
+                "node_id": "657ac3ef-795f-4bc5-967f-341d04c87486",
+                "node_type": "qemu",
                 "port_name_format": "Ethernet{0}",
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to R4 on port FastEthernet1/0",
-                        "id": 10,
-                        "link_id": 2,
-                        "name": "Ethernet0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    }
-                ],
+                "port_segment_size": 0,
                 "properties": {
                     "acpi_shutdown": false,
                     "adapter_type": "e1000",
                     "adapters": 1,
                     "boot_priority": "c",
-                    "console": 5005,
-                    "console_type": "telnet",
                     "cpu_throttling": 0,
                     "cpus": 1,
                     "hda_disk_image": "linux-microcore-4.0.2-clean.img",
@@ -556,206 +583,19 @@
                     "hdd_disk_interface": "ide",
                     "legacy_networking": true,
                     "mac_address": "00:4d:77:74:86:00",
-                    "name": "C2",
                     "options": "-vga none -vnc none",
                     "platform": "x86_64",
                     "process_priority": "normal",
                     "qemu_path": "/Applications/GNS3.app/Contents/Resources/qemu/bin/qemu-system-x86_64",
                     "ram": 256
                 },
-                "server_id": 1,
-                "type": "QemuVM",
-                "vm_id": "657ac3ef-795f-4bc5-967f-341d04c87486",
-                "x": -232.5,
-                "y": -276.5,
-                "z": 0.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "Network A\n100.200.0.0",
-                "x": -943.0,
-                "y": -492.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "Network B\n100.200.1.0",
-                "x": -254.0,
-                "y": -484.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "100.200.0.1",
-                "x": -998.0,
-                "y": -321.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "100.200.0.2\n",
-                "x": -885.0,
-                "y": -277.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.1.0\n100Mbps",
-                "x": -735.0,
-                "y": -381.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.3.0\n100Mbps",
-                "x": -448.0,
-                "y": -379.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.2.0\n100Mbps",
-                "x": -736.0,
-                "y": -134.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.4.0\n10Mbps",
-                "x": -591.0,
-                "y": -286.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.5.0\n1544kbps",
-                "x": -469.0,
-                "y": -135.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "100.200.1.2",
-                "x": -307.0,
-                "y": -285.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "100.200.1.1",
-                "x": -227.0,
-                "y": -323.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "Backbone",
-                "x": -590.0,
-                "y": -500.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.1.1",
-                "x": -742.0,
-                "y": -287.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.1.2",
-                "x": -626.0,
-                "y": -393.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.4.1",
-                "x": -709.0,
-                "y": -249.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.4.2",
-                "x": -475.0,
-                "y": -246.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.3.1",
-                "x": -541.0,
-                "y": -390.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.3.2",
-                "x": -448.0,
-                "y": -291.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.2.1",
-                "x": -712.0,
-                "y": -223.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.2.2",
-                "x": -639.0,
-                "y": -138.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.5.1",
-                "x": -563.0,
-                "y": -138.0
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.5.2",
-                "x": -482.0,
-                "y": -227.0
-            }
-        ],
-        "rectangles": [
-            {
-                "color": "#fc00d3",
-                "height": 420.0,
-                "width": 215.0,
-                "x": -1002.0,
-                "y": -457.0,
-                "z": -1.0
-            },
-            {
-                "color": "#3fffcb",
-                "height": 413.0,
-                "width": 292.0,
-                "x": -333.0,
-                "y": -448.0,
-                "z": -2.0
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 3080,
-                "protocol": "http",
-                "vm": false
+                "symbol": ":/symbols/qemu_guest.svg",
+                "x": -232,
+                "y": -276,
+                "z": 0
             }
         ]
     },
     "type": "topology",
-    "version": "1.5.3"
+    "version": "2.0.0rc4"
 }
