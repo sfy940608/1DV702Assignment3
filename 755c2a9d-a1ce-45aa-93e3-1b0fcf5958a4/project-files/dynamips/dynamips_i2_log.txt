@@ -1,0 +1,11 @@
+May 02 14:00:24.070 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 02 14:00:24.070 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52931.
+May 02 14:00:24.086 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 14:00:24.086 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/fengyuansi/GNS3/projects/755c2a9d-a1ce-45aa-93e3-1b0fcf5958a4/project-files/dynamips 
+May 02 14:00:24.086 GENERAL: working_dir=/Users/fengyuansi/GNS3/projects/755c2a9d-a1ce-45aa-93e3-1b0fcf5958a4/project-files/dynamips
+May 02 14:00:24.087 HYPERVISOR: exec_cmd: ethsw create SW2 
+May 02 14:00:39.128 HYPERVISOR: exec_cmd: ethsw rename SW2 Swith B 
+May 02 14:04:17.414 HYPERVISOR: exec_cmd: ethsw delete Swith B 
+May 02 14:04:17.415 HYPERVISOR: exec_cmd: hypervisor stop 
+May 02 14:04:17.867 HYPERVISOR: Stopped.
+May 02 14:04:17.867 GENERAL: reset done.
